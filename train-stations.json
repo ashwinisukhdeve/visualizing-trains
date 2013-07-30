@@ -15,33 +15,33 @@
     "name" : "Dhamtari"
   },
   {
-    "imports" : ["Mathura Junction"],
+    "imports" : ["Mathura-Junction"],
     "name" : "KasGanj"
    
   },
   {
     "imports" : ["KasGanj"],
-    "name" : "Mathura Junction"
+    "name" : "Mathura-Junction"
    
   },
   {
     "imports" : ["KasGanj"],
-    "name" : "Achnera Junction"
+    "name" : "Achhnera-Junction"
    
   },
    {
-    "imports" : ["Jodhpur Junction"],
-    "name" : "Abohar Junction"
+    "imports" : ["Jodhpur-Junction"],
+    "name" : "Abohar-Junction"
    
   },
   {
-    "imports" : ["Pipar Road Junction"],
-    "name" : "Jodhpur Junction"
+    "imports" : ["Pipar-Road-Junction"],
+    "name" : "Jodhpur-Junction"
    
   },
   {
-    "imports" : ["Jodhpur Junction"],
-    "name" : "Pipar Road Junction"
+    "imports" : ["Jodhpur-Junction"],
+    "name" : "Pipar-Road-Junction"
    
   },
   {
@@ -60,64 +60,64 @@
    
   },
   {
-    "imports" : ["Saharsa Junction"],
-    "name" : "Adarsh Nagar"
+    "imports" : ["Saharsa-Junction"],
+    "name" : "Adarsh-Nagar"
    
   },
   {
-    "imports" : ["Barauni Junction"],
-    "name" : "Saharsa Junction"
+    "imports" : ["Barauni-Junction"],
+    "name" : "Saharsa-Junction"
    
   },
   {
-    "imports" : ["Hajipur Junction"],
-    "name" : "Barauni Junction"
+    "imports" : ["Hajipur-Junction"],
+    "name" : "Barauni-Junction"
    
   },
   {
-    "imports" : ["Barauni Junction"],
-    "name" : "Hajipur Junction"
+    "imports" : ["Barauni-Junction"],
+    "name" : "Hajipur-Junction"
    
   },
   {
-    "imports" : ["Huzur Sahib Nanded"],
-    "name" : "Adilabad Junction"
+    "imports" : ["Huzur-Sahib-Nanded"],
+    "name" : "Adilabad"
    
   },
   {
     "imports" : ["Nizamabad"],
-    "name" : "Huzur Sahib Nanded"
+    "name" : "Huzur-Sahib-Nanded"
    
   },
   {
-    "imports" : ["Huzur Sahib Nanded"],
+    "imports" : ["Huzur-Sahib-Nanded"],
     "name" : "Nizamabad"
    
   },
   
   {
-    "imports" : ["Barkakana Junction"],
-    "name" : "Adara Junction"
+    "imports" : ["Barkakana-Junction"],
+    "name" : "Adara-Junction"
    
   },
   {
-    "imports" : ["Gomoh Junction", "Adara Junction"],
-    "name" : "Barkakana Junction"
+    "imports" : ["Gomoh-Junction", "Adara-Junction"],
+    "name" : "Barkakana-Junction"
    
   },
   {
-    "imports" : ["Asanol Junction","Asanol Junction", "Barkakana Junction"],
-    "name" : "Gomoh Junction"
+    "imports" : ["Asanol-Junction","Asanol-Junction", "Barkakana-Junction"],
+    "name" : "Gomoh-Junction"
    
   },
   {
-    "imports" : ["Purulia Junction"],
-    "name" : "Asanol Junction"
+    "imports" : ["Purulia-Junction"],
+    "name" : "Asanol-Junction"
    
   },
    {
-    "imports" : ["Asanol Junction"],
-    "name" : "Purulia Junction"
+    "imports" : ["Asanol-Junction"],
+    "name" : "Purulia-Junction"
    
   },
   {
@@ -141,48 +141,88 @@
    
   },
   {
-    "imports" : ["Gwalior Junction"],
-    "name" : "Agra Cantt"
+    "imports" : ["Gwalior-Junction"],
+    "name" : "Agra-Cantt"
    
   },
   {
     "imports" : ["Bhind"],
-    "name" : "Gwalior Junction"
+    "name" : "Gwalior-Junction"
    
   },
-   {
-    "imports" : ["Gwalior Junction","Gwalior Junction", "Kota Junction"],
+  {
+    "imports" : ["Gwalior-Junction","Gwalior-Junction"],
+    "name" : "Bhind"
+   
+  },
+  {
+    "imports" : ["Gwalior-Junction","Gwalior-Junction", "Kota-Junction"],
     "name" : "Bhind"
    
   },
   {
     "imports" : ["Bhind"],
-    "name" : "Kota Junction"
+    "name" : "Kota-Junction"
    
   },
   {
-    "imports" : ["Bandikui Junction", "KasGanj", "Kota Junction"],
-    "name" : "Agra Fort"
+    "imports" : ["Bandikui-Junction", "KasGanj", "Kota-Junction"],
+    "name" : "Agra-Fort"
    
   },
   {
-    "imports" : ["Agra Fort", "Mathura Junction"],
-    "name" : "Bandikui Junction"
+    "imports" : ["Agra-Fort", "Mathura-Junction"],
+    "name" : "Bandikui-Junction"
    
   },
   {
-    "imports" : ["Mahesana Junction", "Jodhpur Junction", "Agra Fort", "Asanol Junction"],
-    "name" : "Ahmedabad Junction"
+    "imports" : ["Mahesana-Junction", "Jodhpur-Junction", "Agra-Fort", "Asanol-Junction"],
+    "name" : "Ahmedabad-Junction"
    
   },
   {
-    "imports" : ["Ahmedabad Junction", "Ahmedabad Junction", "Ahmedabad Junction", "Ahmedabad Junction", "Ahmedabad Junction", "Ahmedabad Junction", "Ahmedabad Junction", "Viramgam Junction"],
-    "name" : "Mahesana Junction"
+    "imports" : ["Ahmedabad-Junction", "Ahmedabad-Junction", "Ahmedabad-Junction", "Ahmedabad-Junction", "Ahmedabad-Junction", "Ahmedabad-Junction", "Ahmedabad-Junction", "Viramgam-Junction"],
+    "name" : "Mahesana-Junction"
    
   },
   {
-    "imports" : ["Mahesana Junction", "Mahesana Junction"],
-    "name" : "Viramgam Junction"
+    "imports" : ["Mahesana-Junction", "Mahesana-Junction"],
+    "name" : "Viramgam-Junction"
+   
+  },
+  {
+    "imports" : ["Sitapur", "Sitapur"],
+    "name" : "Aishbagh"
+   
+  },
+  {
+    "imports" : ["Aishbagh"],
+    "name" : "Sitapur"
+   
+  },
+  {
+    "imports" : ["Beawar", "Jodhpur-Junction", "Agra-Fort", "Ahmedabad-Junction"],
+    "name" : "Ajmer-Junction"
+   
+  },
+  {
+    "imports" : ["Ajmer-Junction"],
+    "name" : "Beawar"
+   
+  },
+  {
+    "imports" : ["Purna-Junction", "Purna-Junction"],
+    "name" : "Akola-Junction"
+   
+  },
+  {
+    "imports" : ["Purna-Junction"],
+    "name" : "Akola-Junction"
+   
+  },
+  {
+    "imports" : ["Akola-Junction","Akola-Junction"],
+    "name" : "Purna-Junction"
    
   }
 
