@@ -5,21 +5,19 @@
     <link type="text/css" rel="stylesheet" href="./stylesheets/style.css"/>
     </head>
   <body>
-    <h2>
-      Connecting<br>
-      India
-    </h2>
-    <div style="position:absolute;bottom:0;font-size:18px;"> 
+   
+    <div style="position:absolute;bottom:0;font-size:18px;float:left;"> 
     <script src="./d3/d3.v3.min.js"></script>
    
     <script type="text/javascript">
 
 var w = 1280,
-    h = 800,
+    h = 740,
     rx = w / 2,
     ry = h / 2,
     m0,
     rotate = 0;
+    toStations ="";
 
 var splines = [];
 
@@ -31,7 +29,7 @@ var bundle = d3.layout.bundle();
 
 var line = d3.svg.line.radial()
     .interpolate("bundle")
-    .tension(.0)
+    .tension(.5)
     .radius(function(d) { return d.y; })
     .angle(function(d) { return d.x / 180 * Math.PI; });
 
@@ -40,13 +38,14 @@ var div = d3.select("body").insert("div", "h2")
     .style("top", "-80px")
     .style("left", "-160px")
     .style("width", w + "px")
-    .style("height", w + "px")
+    .style("height", h + "px")
     .style("position", "absolute")
-    .style("-webkit-backface-visibility", "hidden");
+    .style("-webkit-backface-visibility", "hidden")
+    .style("margin-top","40px");
 
 var svg = div.append("svg:svg")
     .attr("width", w)
-    .attr("height", w)
+    .attr("height", h)
   .append("svg:g")
     .attr("transform", "translate(" + rx + "," + ry + ")");
 
@@ -137,6 +136,17 @@ function mouseover(d) {
   svg.selectAll("path.link.source-" + d.key)
       .classed("source", true)
       .each(updateNodes("target", true));
+
+  document.getElementById('from').innerHTML = d.name;
+  
+  for(i=0;i<d.imports.length;i++){
+    toStations += d.imports[i];
+    toStations += "<br>";
+  };
+  document.getElementById('to').innerHTML = toStations;
+  console.log(d.imports);
+
+  toStations="";
 }
 
 function mouseout(d) {
@@ -219,6 +229,28 @@ var packages = {
 
 
     </script>
+    </div>
+    <div style="float:right;margin-left:100px;width:300px;">
+      <h2>Connecting India</h2>
+
+      <p>Indian Railways is an state-owned enterprise, owned and operated by the Government of India through the Ministry of Railways. It is one of the world's largest railway networks comprising 115,000 km (71,000 mi) of track over a route of 65,000 km (40,000 mi) and 7,500 stations.</p>
+
+      <p>This visualization is a humble attempt to visualize the total number of trains that make up this humongous network. The visualization is currently a prototype with around 40 stations on it.</p>
+
+      <p>The full dataset can be found <a href="./data/trains-full.csv">here</a>.</p>
+
+      <p>Concept by <a href="http://twitter.com/kenneth">Kenneth</a> and <a href="http://in.linkedin.com/pub/shweta-humnabadkar-cua/7/997/457">Shweta</a>, students of Information and Interface Design, at National Institute of Design, R & D Campus Bangalore.</p>
+
+      <div class="stations">
+
+      <h4>Stations</h4>
+
+      <p><strong>From:</strong> <br><span id="from"></span></p>
+      
+      <p><strong>To:</strong> <br><span id="to"></span></p>
+        
+      </div>
+
     </div>
   </body>
 </html>

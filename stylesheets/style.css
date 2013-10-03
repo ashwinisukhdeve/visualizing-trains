@@ -140,3 +140,9 @@ path.arc {
 .link.target {
   stroke: #2ca02c;
 }
+
+.stations{
+
+  border: 1px solid #ddd;
+  padding-left: 20px;
+}
